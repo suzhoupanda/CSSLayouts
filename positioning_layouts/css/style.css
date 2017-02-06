@@ -22,7 +22,7 @@ body {
 .main-nav a        { background-color: #3f8abf; }
 .primary-content   { background-color: #caebf6; }
 .secondary-content { background-color: #bfe3d0; }
-.main-footer       { background-color: #b7c0c7; }
+.main-footer       { background-color: #b7c0c7;  }
 
 /* Header, Banner and Footer Layout
 ================================ */
@@ -106,11 +106,11 @@ body {
 		right: 25px;
 	}
 
-	.main-wrapper {
+	/*.main-wrapper {
 		width: 95%;
 		margin: auto;
 	}
-
+*/
 	/* Header, Banner and Footer Layout
 	================================ */
 
@@ -129,8 +129,14 @@ body {
 	/* Column Layout
 	================================ */
 	
+	.main-wrapper, .content-row{
+		height: 100%;
+	}
+
+	
 	.content-row{
 		position: relative;
+		height:100%;
 	}
 
 	.col{
