@@ -1,0 +1,61 @@
+/**
+font-family: 'Quantico', sans-serif;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Iceland', cursive;
+font-family: 'Share Tech Mono', monospace;
+**/
+
+
+section{
+	display: flex;
+	flex-direction: row;
+	height: 10em;
+
+}
+
+
+.question-box{
+	padding: 2em;
+	margin-right: .8em;
+	text-align: center;
+
+	border-radius: 30%;
+	border-color: orange;
+	border-style: solid;
+	border-size: 3em;
+	transition: 4s;
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+/*.question-box:hover{
+	flex: 3;
+
+}
+*/
+.question-box:hover .question-answer{
+	flex:3;
+}
+
+.question-box:hover .question-prompt{
+}
+
+.question-prompt{
+	flex: 1;
+	align-self: center;
+	font-family: 'Quantico', sans-serif;
+	font-size: 0.8em;
+}
+
+.question-answer{
+	flex: 1;
+	align-self: center;
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 0.8em;
+	
+}
+
+
