@@ -15,7 +15,9 @@ body {
 /* Layout Element Colors
 ================================ */
 
-.main-header       { background-color: #384047; }
+.main-header       { 
+	background-color: #384047;
+	overflow: hidden; }
 .main-logo a       { background-color: #5fcf80; }
 .main-nav a        { background-color: #3f8abf; }
 .primary-content   { background-color: #caebf6; }
@@ -24,6 +26,20 @@ body {
 
 /* Header, Banner and Footer Layout
 ================================ */
+
+.main-logo,.main-nav{
+	position: relative;
+}
+
+.main-logo{
+	width: 150px;
+	left: 20px;
+}
+
+.main-nav{
+	bottom: 32px;
+	left: 200px;
+}
 
 .main-header {
 	padding: 15px;
