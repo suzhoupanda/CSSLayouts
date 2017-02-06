@@ -27,19 +27,8 @@ body {
 /* Header, Banner and Footer Layout
 ================================ */
 
-.main-logo,.main-nav{
-	position: relative;
-}
 
-.main-logo{
-	width: 150px;
-	left: 20px;
-}
 
-.main-nav{
-	bottom: 32px;
-	left: 200px;
-}
 
 .main-header {
 	padding: 15px;
@@ -98,6 +87,14 @@ body {
 ================================ */
 
 @media (min-width: 769px) {
+
+	.main-header{
+		position: relative;
+	}
+
+	.main-logo,.main-nav{
+		position: absolute;
+	}
 
 	.main-wrapper {
 		width: 95%;
