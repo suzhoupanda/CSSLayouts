@@ -138,6 +138,15 @@ body {
 		width: 30%;
 	}
 
+	.primary-content{
+		width: 40%;
+		left: 30%;
+	}
+
+	.secondary-content{
+		right: 0;
+	}
+
 	/* Imagery
 	================================ */
 
