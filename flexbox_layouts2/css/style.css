@@ -137,6 +137,10 @@ body {
 		left: 10%;
 	}
 
+	.no-flexbox a:hover::before{
+		left: 18px;
+	}
+
 	.main-nav li {
 		margin-left: 8px;
 		margin-right: 8px;
@@ -145,6 +149,12 @@ body {
 		-webkit-flex-grow: 1;
 		flex-grow: 1;
 		transition: .5s;
+	}
+
+	.no-flexbox .main-nav li{
+		display: inline-block;
+		margin-top: 12px;
+		width: 150px;
 	}
 	.main-logo:first-child {
   		margin-right: 50px;
@@ -177,6 +187,12 @@ body {
 		margin-right: -5px;
 		vertical-align: top;
 	}
+
+	.no-flexbox .col{
+		float: left;
+		width: 33.3%;
+	}
+
 	.primary-content {
 		width: 40%;
 		-webkit-flex: 2;
