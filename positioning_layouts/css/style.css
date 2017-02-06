@@ -96,6 +96,16 @@ body {
 		position: absolute;
 	}
 
+	.main-logo{
+		top: 20px;
+		left: 20px;
+	}
+
+	.main-nav{
+		bottom: 35px;
+		right: 25px;
+	}
+
 	.main-wrapper {
 		width: 95%;
 		margin: auto;
