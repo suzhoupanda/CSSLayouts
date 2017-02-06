@@ -130,6 +130,7 @@ body {
 		position: absolute;
 		top: 10px;
 		left: -30%;
+		transition: .4s;
 	}
 
 	.main-nav a:hover::before{
