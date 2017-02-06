@@ -128,15 +128,14 @@ body {
 
 	/* Column Layout
 	================================ */
-
-	.col {
-		width: 30%;
-		display: inline-block;
-		margin-right: -5px;
-		vertical-align: top;
+	
+	.content-row{
+		position: relative;
 	}
-	.primary-content {
-		width: 40%;
+
+	.col{
+		position: absolute;
+		width: 30%;
 	}
 
 	/* Imagery
