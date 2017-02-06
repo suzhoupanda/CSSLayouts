@@ -3,8 +3,11 @@
 ================================ */
 
 * {
-	-moz-box-sizing: border-box;	
 	box-sizing: border-box;
+}
+html,
+body {
+ height: 100%;
 }
 body {
 	font: normal 1.1em/1.5 sans-serif;
@@ -15,20 +18,15 @@ body {
 /* Layout Element Colors
 ================================ */
 
-.main-header       { 
-	background-color: #384047;
-	overflow: hidden; }
+.main-header       { background-color: #384047; }
 .main-logo a       { background-color: #5fcf80; }
 .main-nav a        { background-color: #3f8abf; }
 .primary-content   { background-color: #caebf6; }
 .secondary-content { background-color: #bfe3d0; }
-.main-footer       { background-color: #b7c0c7;  }
+.main-footer       { background-color: #b7c0c7; }
 
 /* Header, Banner and Footer Layout
 ================================ */
-
-
-
 
 .main-header {
 	padding: 15px;
@@ -73,6 +71,13 @@ body {
 	border: solid 1px;
 	padding: 5px;
 }
+.icon {
+	background-color: #39add1;
+	margin-top: 34px;
+	height: 180px;
+	border-radius: 5px;
+}
+
 
 /* Float Clearfix
 ================================ */
@@ -88,32 +93,31 @@ body {
 
 @media (min-width: 769px) {
 
-	.main-header{
-		position: relative;
+	body {
+		padding-top: 100px;
 	}
 
-	.main-logo,.main-nav{
-		position: absolute;
-	}
-
-	.main-logo{
-		top: 20px;
-		left: 20px;
-	}
-
-	.main-nav{
-		bottom: 35px;
-		right: 25px;
-	}
-
-	/*.main-wrapper {
-		width: 95%;
-		margin: auto;
-	}
-*/
 	/* Header, Banner and Footer Layout
 	================================ */
 
+	.main-header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.main-logo,
+	.main-nav {
+		position: absolute;
+	}
+	.main-logo {
+		width: 150px;
+		top: 20px;
+		left: 20px;
+	}
+	.main-nav {
+		bottom: 30px;
+		right: 25px;
+	}
 	.main-nav li {
 		margin-right: 6px;
 		margin-left: 6px;
@@ -122,35 +126,21 @@ body {
 	.main-banner {
 		background: #dfe2e4;
 		text-align: center;
-		padding: 35px 15px;
+		padding: 50px 15px;
 		display: block;
 	}
 
 	/* Column Layout
 	================================ */
-	
-	.main-wrapper, .content-row{
-		height: 100%;
-	}
 
-	
-	.content-row{
-		position: relative;
-		height:100%;
-	}
-
-	.col{
-		position: absolute;
+	.col {
 		width: 30%;
+		display: inline-block;
+		margin-right: -5px;
+		vertical-align: top;
 	}
-
-	.primary-content{
+	.primary-content {
 		width: 40%;
-		left: 30%;
-	}
-
-	.secondary-content{
-		right: 0;
 	}
 
 	/* Imagery
