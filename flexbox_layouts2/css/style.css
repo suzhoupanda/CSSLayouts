@@ -144,10 +144,16 @@ body {
 		align-self: center;
 		-webkit-flex-grow: 1;
 		flex-grow: 1;
+		transition: .5s;
 	}
 	.main-logo:first-child {
   		margin-right: 50px;
 	}
+
+	.main-nav li:hover:not(.main-logo){
+		flex-grow: 2;
+	}
+
 	.main-banner {
 		background: #dfe2e4;
 		text-align: center;
